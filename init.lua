@@ -16,42 +16,38 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
-    {
-    'nvim-telescope/telescope.nvim', tag = '0.1.5',
-      dependencies = { 'nvim-lua/plenary.nvim' }
-    },
+  {'nvim-telescope/telescope.nvim', tag = '0.1.5',
+    dependencies = { 'nvim-lua/plenary.nvim' }
+  },
+
 
   {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
 
   {"rebelot/kanagawa.nvim"},
 
-  {
-  "folke/which-key.nvim",
+  {"folke/which-key.nvim",
   event = "VeryLazy",
   init = function()
     vim.o.timeout = true
     vim.o.timeoutlen = 300
   end,
-  opts = {
-    }
+  opts = {}
   },
+
+
+
 }
 
 -- Plugin options
 local opts = {}
 
-
 require("lazy").setup(plugins, opts)
-
-
 
 builtin = require("telescope.builtin")
 
-vim.cmd("colorscheme kanagawa")
 
--- Mappings for plugins
+vim.cmd("colorscheme kanagawa")
 
 vim.opt.runtimepath:append("~/.config/runtimeneovim")
 
@@ -62,5 +58,6 @@ require'nvim-treesitter.configs'.setup {
     -- Temporarily disabled while Lua parse installation is broken
     disable = { "lua", },
 }
-require("pluginconfigs")
+
+
 require("mappings")
