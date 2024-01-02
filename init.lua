@@ -1,6 +1,5 @@
 -- Native Neovim mappings
 -- Neovim options
-require("options")
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -35,7 +34,14 @@ local plugins = {
   opts = {}
   },
 
+  {"windwp/nvim-autopairs",
+    event = "InsertEnter",
+    opts = {}
+  },
 
+  {"windwp/nvim-ts-autotag"},
+
+  {'akinsho/toggleterm.nvim', version = "*", opts = {}},
 
 }
 
@@ -46,14 +52,17 @@ require("lazy").setup(plugins, opts)
 
 builtin = require("telescope.builtin")
 
+require("toggleterm").setup{}
+
 
 vim.cmd("colorscheme kanagawa")
 
 vim.opt.runtimepath:append("~/.config/runtimeneovim")
 
 require'nvim-treesitter.configs'.setup {
-    highlight = { enable = true,},
-    indent = { enable = true,},
+    highlight = { enable = true, },
+    indent = { enable = true, },
+    autotag = { enable = true, },
     parser_install_dir = "~/.config/runtimeneovim",
     -- Temporarily disabled while Lua parse installation is broken
     disable = { "lua", },
@@ -61,3 +70,4 @@ require'nvim-treesitter.configs'.setup {
 
 
 require("mappings")
+require("options")
