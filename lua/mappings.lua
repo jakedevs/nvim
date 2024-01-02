@@ -1,6 +1,3 @@
-vim.g.mapleader = " "
-vim.g.localmapleader = " "
-
 -- Buffer operations
 vim.keymap.set('n', '<leader>bk', ":q<cr>", { desc = "kill buffer" })
 vim.keymap.set('n', '<leader>bl', builtin.buffers, { desc = "list buffers" })
