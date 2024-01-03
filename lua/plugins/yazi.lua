@@ -1,2 +1,1 @@
-return { "DreamMaoMao/yazi.nvim",
-  }
+return { "DreamMaoMao/yazi.nvim" }
