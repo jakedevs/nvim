@@ -10,3 +10,6 @@ vim.keymap.set('n', '<leader>fm', ":Yazi<cr>", { desc = "manage files"})
 
 -- Terminal
 vim.keymap.set('n', '<leader>tt', ":ToggleTerm<cr>", {desc = "toggle terminal"})
+
+-- LSP
+vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
