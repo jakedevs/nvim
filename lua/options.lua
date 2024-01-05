@@ -10,11 +10,9 @@ vim.opt.syntax = off
 -- which-key docs
 local wk = require("which-key")
 wk.register({
-	b = { name = "buffer operations" },
-	f = { name = "file operations" },
-	t = { name = "terminal operations" },
-}, { prefix = "<leader>" })
+    b = {name = "buffer operations"},
+    f = {name = "file operations"},
+    t = {name = "terminal operations"}
+}, {prefix = "<leader>"})
 
-if vim.g.neovide then
-	vim.o.guifont = "Hack"
-end
+if vim.g.neovide then vim.o.guifont = "Hack" end
