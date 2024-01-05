@@ -1,4 +1,12 @@
--- Buffer operations
+-- which-key docs
+local wk = require("which-key")
+wk.register({
+    b = {name = "buffer operations"},
+    f = {name = "file operations"},
+    t = {name = "terminal operations"},
+    c = {name = "code operations"}
+}, {prefix = "<leader>"})
+------------------------------------------------------
 vim.keymap.set("n", "<leader>bk", ":q!<cr>", {desc = "kill buffer"})
 vim.keymap.set("n", "<leader>bl", builtin.buffers, {desc = "list buffers"})
 vim.keymap.set("n", "<leader>bn", ":enew<cr>", {desc = "new buffer"})
