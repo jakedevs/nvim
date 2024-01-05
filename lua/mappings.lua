@@ -13,5 +13,5 @@ vim.keymap.set("n", "<leader>tt", ":ToggleTerm<cr>", { desc = "toggle terminal" 
 
 -- LSP
 vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "show docs" })
-vim.keymap.set("n", "<leader>cf", ":Format<cr>", { desc = "format code" })
+vim.keymap.set("n", "<leader>cf", vim.lsp.buf.format, { desc = "format code" })
 vim.keymap.set({ "n", "v" }, "<space>ca", vim.lsp.buf.code_action, { desc = "code actions " })
