@@ -8,7 +8,7 @@ return {
       },
       perspective = {
         priority = 'root',
-        root_tell = 'Index.html',
+        root_tell = 'Index.md',
       }
     })
   end
