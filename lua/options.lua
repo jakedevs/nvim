@@ -14,5 +14,3 @@ wk.register({
     f = {name = "file operations"},
     t = {name = "terminal operations"}
 }, {prefix = "<leader>"})
-
-if vim.g.neovide then vim.o.guifont = "Hack" end
