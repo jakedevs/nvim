@@ -8,5 +8,6 @@ return {
       -- Achieve quietly
       -- The secret of getting ahead is getting started
     })
+    require('mini.pick').setup()
   end,
 }

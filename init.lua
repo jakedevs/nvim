@@ -13,7 +13,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins", {change_detection = {enabled = false}})
 
-builtin = require("telescope.builtin")
 
 -- Currently active colorscheme
 -- See plugins/colorschemes for colorscheme list

@@ -8,12 +8,12 @@ wk.register({
 }, { prefix = "<leader>" })
 ------------------------------------------------------
 vim.keymap.set("n", "<leader>bk", ":q!<cr>", { desc = "kill buffer" })
-vim.keymap.set("n", "<leader>bl", builtin.buffers, { desc = "list buffers" })
+vim.keymap.set("n", "<leader>bl", MiniPick.builtin.buffers, { desc = "list buffers" })
 vim.keymap.set("n", "<leader>bn", ":enew<cr>", { desc = "new buffer" })
 
 -- File operations
-vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "find files" })
-vim.keymap.set("n", "<leader>fs", builtin.live_grep, { desc = "search text" })
+vim.keymap.set("n", "<leader>ff", MiniPick.builtin.files, { desc = "find files" })
+vim.keymap.set("n", "<leader>fs", MiniPick.builtin.grep_live, { desc = "search text" })
 vim.keymap.set("n", "<leader>fm", ":Yazi<cr>", { desc = "manage files" })
 
 -- Terminal
