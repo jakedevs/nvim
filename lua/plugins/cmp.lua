@@ -24,10 +24,12 @@ return {
 					completion = cmp.config.window.bordered(),
 					documentation = cmp.config.window.bordered(),
 				},
-
 				sources = cmp.config.sources({
-					{ name = "path" },
 					{ name = "nvim_lsp" },
+					{ name = "luasnip" },
+					{ name = "path" },
+				}, {
+					{ name = "buffer" },
 				}),
 			})
 
@@ -36,11 +38,7 @@ return {
 				sources = cmp.config.sources({ { name = "path" } }, { { name = "cmdline" } }),
 			})
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
-			-- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
 			require("lspconfig")["lua_ls"].setup({ capabilities = capabilities })
-			require("lspconfig")["rust_analyzer"].setup({
-				capabilities = capabilities,
-			})
 		end,
 	},
 }
