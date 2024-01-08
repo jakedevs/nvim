@@ -5,7 +5,6 @@ vim.cmd("set expandtab")
 vim.cmd("set smartindent")
 
 vim.opt.showmode = false
-vim.opt.syntax = off
 
 -- which-key docs
 local wk = require("which-key")

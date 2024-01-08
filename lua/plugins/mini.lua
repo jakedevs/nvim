@@ -1,13 +1,17 @@
 return {
-  "echasnovski/mini.nvim",
-  version = false,
-  config = function()
-    require("mini.starter").setup({
-      header = "Deliberate action is the key to success"
-      -- Facing the anxieties of life will give you courage
-      -- Achieve quietly
-      -- The secret of getting ahead is getting started
-    })
-    require('mini.pick').setup()
-  end,
+
+	"echasnovski/mini.nvim",
+	version = false,
+	config = function()
+    		require("../randomQuote")
+		require("mini.starter").setup({
+      header = quotes[math.random(1, tablelength(quotes))]
+		})
+		require("mini.pick").setup()
+		require("mini.files").setup()
+		require("mini.indentscope").setup({
+			delay = 100,
+			symbol = "|",
+		})
+	end,
 }

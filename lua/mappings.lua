@@ -13,13 +13,14 @@ end
 
 ------------------------------------------------------
 vim.keymap.set("n", "<leader>bk", ":q!<cr>", { desc = "kill buffer" })
-vim.keymap.set("n", "<leader>bl", MiniPick.builtin.buffers, { desc = "list buffers" })
 vim.keymap.set("n", "<leader>bn", ":enew<cr>", { desc = "new buffer" })
+vim.keymap.set("n", "<leader>bl", MiniPick.builtin.buffers, { desc = "list buffers" })
 
 -- File operations
 vim.keymap.set("n", "<leader>ff", MiniPick.builtin.files, { desc = "find files" })
 vim.keymap.set("n", "<leader>fs", MiniPick.builtin.grep_live, { desc = "search text" })
 vim.keymap.set("n", "<leader>fm", ":Yazi<cr>", { desc = "manage files" })
+vim.keymap.set("n", "<leader>fo", MiniFiles.open, { desc = "manage files" })
 
 -- Terminal
 vim.keymap.set("n", "<leader>tt", ":ToggleTerm<cr>", { desc = "toggle terminal" })
