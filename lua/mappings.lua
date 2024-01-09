@@ -23,7 +23,7 @@ vim.keymap.set("n", "<leader>fm", ":Yazi<cr>", { desc = "manage files" })
 vim.keymap.set("n", "<leader>fo", MiniFiles.open, { desc = "manage files" })
 
 -- Terminal
-vim.keymap.set("n", "<leader>tt", ":ToggleTerm<cr>", { desc = "toggle terminal" })
+vim.keymap.set("n", "<leader>tt", ":ToggleTerm direction=float<cr>", { desc = "toggle terminal" })
 
 -- LSP
 vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "show docs" })
