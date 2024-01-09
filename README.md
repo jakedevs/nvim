@@ -23,3 +23,8 @@ Counted via [Tokei](https://github.com/XAMPPRocky/tokei)
 - Syntax highlighting
 - Status bar
 - Terminal
+
+
+---
+
+Thanks to the Neovim community. This config is simply plugins made by other pieced together in the cleanest way I can manage.
