@@ -2,6 +2,7 @@
 
 
 ![](./assets/neovim.png)
+![](img/2024-01-08-19-49-49.png)
 
 ## Recent features
 - Random motivational start message because why not
