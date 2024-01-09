@@ -10,5 +10,15 @@
 ## 186 LOC
 Counted via [Tokei](https://github.com/XAMPPRocky/tokei)
 
-## Autopairs, themes, LSP, file management, etc. included
-
+## Features
+- Autopairs
+- Code completion
+- Colorschemes
+- File search tools
+- File manager
+- Formatting
+- LSP
+- Markdown tools
+- Syntax highlighting
+- Status bar
+- Terminal
