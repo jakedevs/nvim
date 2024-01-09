@@ -8,7 +8,6 @@ return {
       header = quotes[math.random(1, tablelength(quotes))]
 		})
 		require("mini.pick").setup()
-		require("mini.files").setup()
 		require("mini.indentscope").setup({
 			delay = 100,
 			symbol = "|",
