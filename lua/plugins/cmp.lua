@@ -25,9 +25,9 @@ return {
 					documentation = cmp.config.window.bordered(),
 				},
 				sources = cmp.config.sources({
-					{ name = "nvim_lsp" },
 					{ name = "luasnip" },
 					{ name = "path" },
+					{ name = "nvim-lsp" },
 				}, {
 					{ name = "buffer" },
 				}),
@@ -37,8 +37,6 @@ return {
 				mapping = cmp.mapping.preset.cmdline(),
 				sources = cmp.config.sources({ { name = "path" } }, { { name = "cmdline" } }),
 			})
-			local capabilities = require("cmp_nvim_lsp").default_capabilities()
-			require("lspconfig")["lua_ls"].setup({ capabilities = capabilities })
 		end,
 	},
 }
