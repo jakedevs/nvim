@@ -23,10 +23,10 @@ Counted via [Tokei](https://github.com/XAMPPRocky/tokei)
 - Terminal
 
 ## Precepts
-- *Decoupled**: Where possible, deleting an unessential file will not break the config. If not, changes should be easy.
-- *Minimal*: Keep the config as small as possible.
-- *Modular*: Adding new features is simple.
-- *Readable*: From a top level view, the config should be readable and verbose. Ex: `conform.lua` instead of `formatter.lua`.
+- **Decoupled**: Where possible, deleting an unessential file will not break the config. If not, changes should be easy.
+- **Minimal**: Keep the config as small as possible.
+- **Modular**: Adding new features is simple.
+- **Readable**: From a top level view, the config should be readable and verbose. Ex: `conform.lua` instead of `formatter.lua`.
 
 ---
 
