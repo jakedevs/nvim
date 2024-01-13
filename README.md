@@ -2,21 +2,19 @@
 
 
 ![](./assets/neovim.png)
-![](img/2024-01-08-19-49-49.png)
 
 ## Recent features
 - Random motivational start message because why not
 - luasnip-snippets integration(better snippets)
 
-## 284 LOC
+## 256 LOC
 Counted via [Tokei](https://github.com/XAMPPRocky/tokei)
 
 ## Features
 - Autopairs
 - Code completion
 - Colorschemes
-- File search tools
-- File manager
+- File management
 - Formatting
 - LSP
 - Markdown tools
@@ -24,6 +22,11 @@ Counted via [Tokei](https://github.com/XAMPPRocky/tokei)
 - Status bar
 - Terminal
 
+## Precepts
+- *Decoupled**: Where possible, deleting an unessential file will not break the config. If not, changes should be easy.
+- *Minimal*: Keep the config as small as possible.
+- *Modular*: Adding new features is simple.
+- *Readable*: From a top level view, the config should be readable and verbose. Ex: `conform.lua` instead of `formatter.lua`.
 
 ---
 
