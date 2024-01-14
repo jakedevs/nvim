@@ -7,7 +7,7 @@
 - Random motivational start message because why not
 - luasnip-snippets integration(better snippets)
 
-## 256 LOC
+## 273 LOC
 Counted via [Tokei](https://github.com/XAMPPRocky/tokei)
 
 ## Features
