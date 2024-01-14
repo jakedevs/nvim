@@ -14,5 +14,6 @@ return {
     require("mini.pick").setup({})
     --require("mini.surround").setup({})
     require("mini.comment").setup({})
+    require("mini.surround").setup({})
   end,
 }
