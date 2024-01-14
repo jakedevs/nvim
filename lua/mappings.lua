@@ -28,7 +28,7 @@ vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<cr>", { desc = "file tree" })
 -- Clipboard operations
 vim.keymap.set({ "n", "v" }, "<leader>yl", "<cmd> y+<cr>", { desc = "copy line" })
 vim.keymap.set({ "n", "v" }, "<leader>ya", "<cmd> %y+<cr>", { desc = "copy all" })
-vim.keymap.set({ "n", "v" }, "<leader>p", '<cmd> ["+p]<cr>', { desc = "copy all" })
+vim.keymap.set({ "n", "v" }, "<leader>p", '<cmd> ["+p]<cr>', { desc = "paste clipboard" })
 
 -- Terminal
 vim.keymap.set("n", "<leader>tt", ":ToggleTerm direction=float<cr>", { desc = "toggle terminal" })
