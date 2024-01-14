@@ -9,6 +9,8 @@ return {
       lua = { "stylua" },
       python = { "isort", "black" },
       javascript = { { "prettierd", "prettier" } },
+      css = { { "prettierd", "prettier" } },
+      html = { { "prettierd", "prettier" } },
     },
     -- format_on_save = { timeout_ms = 500, lsp_fallback = true },
     -- Customize formatters
