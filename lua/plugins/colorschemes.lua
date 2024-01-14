@@ -1,1 +1,6 @@
-return {{"rebelot/kanagawa.nvim"}, {"ellisonleao/gruvbox.nvim"}}
+return {
+  {
+    "rebelot/kanagawa.nvim",
+  },
+  { "ellisonleao/gruvbox.nvim" },
+}

@@ -23,10 +23,12 @@ vim.keymap.set("n", "<leader>bi", MiniPick.builtin.buffers, { desc = "list buffe
 vim.keymap.set("n", "<leader>ff", MiniPick.builtin.files, { desc = "find files" })
 vim.keymap.set("n", "<leader>fs", MiniPick.builtin.grep_live, { desc = "search text" })
 vim.keymap.set("n", "<leader>fm", ":Yazi<cr>", { desc = "manage files" })
+vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<cr>", { desc = "file tree" })
 
 -- Clipboard operations
 vim.keymap.set({ "n", "v" }, "<leader>yl", "<cmd> y+<cr>", { desc = "copy line" })
 vim.keymap.set({ "n", "v" }, "<leader>ya", "<cmd> %y+<cr>", { desc = "copy all" })
+vim.keymap.set({ "n", "v" }, "<leader>p", '<cmd> ["+p]<cr>', { desc = "copy all" })
 
 -- Terminal
 vim.keymap.set("n", "<leader>tt", ":ToggleTerm direction=float<cr>", { desc = "toggle terminal" })
