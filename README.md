@@ -2,6 +2,7 @@
 
 
 ![](./assets/neovim.png)
+*terminal enlarged for showcase*
 
 ## Recent features
 - Random motivational start message because why not
