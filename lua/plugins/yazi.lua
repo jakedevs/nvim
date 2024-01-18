@@ -1,1 +1,0 @@
-return { "DreamMaoMao/yazi.nvim" }
