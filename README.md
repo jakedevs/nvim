@@ -11,6 +11,9 @@
 ## 267 LOC
 Counted via [Tokei](https://github.com/XAMPPRocky/tokei)
 
+## WIP
+- Improve buffer management 
+
 ## Features
 - Autopairs
 - Code completion
