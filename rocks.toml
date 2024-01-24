@@ -1,23 +1,60 @@
-# This is your rocks.nvim plugins declaration file.
-# Here is a small yet pretty detailed example on how to use it:
-#
-# [plugins]
-# nvim-treesitter = "semver_version"  # e.g. "1.0.0"
-
-# List of non-Neovim rocks.
-# This includes things like `toml` or other lua packages.
 [rocks]
 
-
-
-# List of Neovim plugins to install alongside their versions.
-# If the plugin name contains a dot then you must add quotes to the key name!
 [plugins]
-"rocks.nvim" = "2.6.2" # rocks.nvim can also manage itself :D
+"rocks.nvim" = "2.7.0"
 "rocks-git.nvim" = "1.2.1"
 "rocks-config.nvim" = "1.2.0"
+
+# Common plugin dependencies, until rocks has support for manually declaring them
+"plenary.nvim" = { git = "nvim-lua/plenary.nvim" }
+"nvim-web-devicons" = { git = 'stevearc/oil.nvim' }
+
+# Utility
 "toggleterm.nvim" = { git = "akinsho/toggleterm.nvim" }
-"mason.nvim" = {git = "williamboman/mason.nvim"}
+
+# LSP
+"mason.nvim" = { git = "williamboman/mason.nvim" }
+"mason-lspconfig.nvim" = { git = "williamboman/mason-lspconfig.nvim" }
+"neovim-lspconfig" = { git = "neovim/nvim-lspconfig" }
+
+# Formatting, pairs, syntax highlighting
+"conform.nvim" = { git = "stevearc/conform.nvim" }
+"nvim-autopairs" = { git = "windwp/nvim-autopairs" }
+"nvim-treesitter" = { git = "nvim-treesitter/nvim-treesitter" }
+
+# Cosmetic
+"lualine.nvim" = { git = "nvim-lualine/lualine.nvim" }
+"kanagawa.nvim" = { git = "rebelot/kanagawa.nvim" }
+"which-key.nvim" = { git = "folke/which-key.nvim" }
+
+# Completion
+"nvim-cmp" = { git = "hrsh7th/nvim-cmp" }
+"cmp-path" = { git = "hrsh7th/cmp-path" }
+"cmp-cmdline" = { git = "hrsh7th/cmp-cmdline" }
+"cmp-nvim-lsp" = { git = "hrsh7th/cmp-nvim-lsp" }
+"cmp-buffer" = { git = "hrsh7th/cmp-buffer" }
+"cmp_luasnip" = { git = "saadparwaiz1/cmp_luasnip" }
+
+# Snippet engine
+"LuaSnip" = { git = "L3MON4D3/LuaSnip" }
+
+# Git UI
+"diffview.nvim" = { git = "sindrets/diffview.nvim" }
+"neogit" = { git = "NeogitOrg/neogit" }
+
+# Mini plugin suite, see mini.lua
+"mini.nvim" = { git = "echasnovski/mini.nvim" }
+
+# Markdown tools
+"mkdnflow.nvim" = { git = "jakewvincent/mkdnflow.nvim" }
+"markdown-preview.nvim" = { git = "iamcco/markdown-preview.nvim" }
+
+# File managers
+"tfm.nvim" = { git = "rolv-apneseth/tfm.nvim" }
+"oil.nvim" = { git = "stevearc/oil.nvim" }
+
+# Zen mode
+"zen-mode.nvim" = { git = "folke/zen-mode.nvim" }
 
 
 [config]
