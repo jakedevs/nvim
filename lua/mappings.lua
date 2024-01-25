@@ -25,4 +25,8 @@ vim.keymap.set({ "n", "v" }, "<leader>p", "<cmd> p+<cr>", { desc = "paste clipbo
 -- LSP
 vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "show docs" })
 vim.keymap.set("n", "<leader>cf", Format, { desc = "format code" })
-vim.keymap.set({ "n", "v" }, "<space>ca", vim.lsp.buf.code_action, { desc = "code actions " })
+vim.keymap.set({ "n", "v" }, "<space>ca", vim.lsp.buf.code_action, { desc = "code actions" })
+
+-- Cosmetic
+vim.keymap.set({ "n", "v" }, "<space>le", ":set linebreak<cr>", { desc = "enable line break" })
+vim.keymap.set({ "n", "v" }, "<space>ld", ":set nolinebreak<cr>", { desc = "disable line break" })

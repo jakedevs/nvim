@@ -7,4 +7,3 @@ vim.cmd("set smartindent")
 vim.cmd("set autochdir")
 
 vim.opt.showmode = false
-
