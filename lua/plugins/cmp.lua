@@ -24,7 +24,6 @@ return {
           documentation = cmp.config.window.bordered(),
         },
         sources = cmp.config.sources({
-          { name = "mkdnflow" },
           { name = "path" },
           { name = "nvim_lsp" },
         }, {

@@ -9,7 +9,7 @@ wk.register({
   p = { name = "paste image" },
 }, { prefix = "<leader>" })
 -- format function
-function Format() require("conform").format({ async = true, lsp_fallback = false }) end
+function Format() require("conform").format({ async = true, lsp_fallback = true }) end
 
 ------------------------------------------------------
 vim.keymap.set("n", "<leader>bk", ":q!<cr>", { desc = "kill buffer" })

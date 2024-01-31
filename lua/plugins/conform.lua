@@ -8,7 +8,7 @@ return {
     formatters_by_ft = {
       lua = { "stylua" },
       python = { "isort", "black" },
-      javascript = { { "biome" } },
+      javascript = { "biome" },
       css = { { "prettierd", "prettier" } },
       html = { { "prettierd", "prettier" } },
     },
@@ -20,5 +20,5 @@ return {
       },
     },
   },
-  init = function() vim.o.formatexpr = "v:lua.require'conform'.formatexpr()" end,
+  -- init = function() vim.o.formatexpr = "v:lua.require'conform'.formatexpr()" end,
 }
