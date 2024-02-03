@@ -16,6 +16,7 @@ vim.keymap.set("n", "<leader>bk", ":q!<cr>", { desc = "kill buffer" })
 vim.keymap.set("n", "<leader>bn", ":tabnew<cr>", { desc = "new buffer" })
 vim.keymap.set("n", "<leader>bh", ":tabprevious<cr>", { desc = "previous buffer" })
 vim.keymap.set("n", "<leader>bl", ":tabnext<cr>", { desc = "next buffer" })
+vim.keymap.set("n", "<leader>bo", ":only<cr>", { desc = "next buffer" })
 
 -- Clipboard operations
 vim.keymap.set({ "n", "v" }, "<leader>yy", "<cmd> y+<cr>", { desc = "copy line" })
