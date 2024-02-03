@@ -11,6 +11,6 @@ return -- Lua
   },
 
   { "preservim/vim-pencil" },
-  vim.keymap.set("n", "<leader>zm", ":ZenMode<cr>", { desc = "Toggle Mode Zen" }),
-  vim.keymap.set("n", "<leader>wm", ":ZenMode | PencilToggle<cr>", { desc = "Toggle Mode Writing" }),
+  vim.keymap.set("n", "<leader>mz", ":ZenMode<cr>", { desc = "Toggle Mode Zen" }),
+  vim.keymap.set("n", "<leader>mw", ":ZenMode | PencilToggle<cr>", { desc = "Toggle Mode Writing" }),
 }
