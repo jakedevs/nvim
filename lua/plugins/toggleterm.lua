@@ -1,10 +1,9 @@
 return {
   "akinsho/toggleterm.nvim",
-  version = "*",
   config = function()
     require("toggleterm").setup()
     vim.keymap.set("n", "<leader>th", ":ToggleTerm size=22 direction=horizontal<CR>", { desc = "toggle terminal hsplit" })
-    vim.keymap.set("n", "<leader>tv", ":ToggleTerm size=22 direction=vertical<CR>", { desc = "toggle terminal floating" })
+    vim.keymap.set("n", "<leader>tv", ":ToggleTerm size=100 direction=vertical<CR>", { desc = "toggle terminal floating" })
     vim.keymap.set("n", "<leader>tf", ":ToggleTerm size=22 direction=float<CR>", { desc = "toggle terminal floating" })
     vim.keymap.set("n", "<leader>tt", ":ToggleTerm size=22 direction=tab<CR>", { desc = "toggle terminal tab" })
 

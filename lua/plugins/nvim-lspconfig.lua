@@ -25,12 +25,15 @@ return {
       lspconfig.lua_ls.setup({})
       lspconfig.html.setup({})
       lspconfig.cssls.setup({})
+      lspconfig.tsserver.setup({})
       lspconfig.biome.setup({})
-      lspconfig.ltex.setup({ settings = {
-        ltex = {
-          language = "en-US",
-        },
-      } })
+      lspconfig.ltex.setup({
+        settings = {
+          ltex = {
+            language = "en-US",
+          },
+        }
+      })
       settings = {}
     end,
   },
