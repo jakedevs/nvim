@@ -14,6 +14,7 @@ return {
     require("mini.pick").setup({})
     require("mini.comment").setup({})
     require("mini.surround").setup({})
+    require("mini.files").setup({})
 
     -- Keymap
     vim.keymap.set("n", "<leader>bi", MiniPick.builtin.buffers, { desc = "list buffers" })
