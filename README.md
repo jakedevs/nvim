@@ -1,4 +1,5 @@
 # Personal Neovim configuration
+This is strictly a personal configuration.
 
 
 ![](./assets/neovim.png)
@@ -12,7 +13,7 @@
 Counted via [Tokei](https://github.com/XAMPPRocky/tokei)
 
 ## WIP
-- Improve buffer management 
+- [] Improve buffer management 
 
 ## Features
 - Autopairs
