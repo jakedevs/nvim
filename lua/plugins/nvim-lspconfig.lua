@@ -9,7 +9,6 @@ return {
   {
     "neovim/nvim-lspconfig",
     lazy = false,
-    dependencies = { "folke/neodev.nvim", ft="lua" },
     config = function()
       local lspconfig = require("lspconfig")
       lspconfig.lua_ls.setup({})
@@ -27,4 +26,5 @@ return {
       settings = {}
     end,
   },
+  { "folke/neodev.nvim", ft = "lua" },
 }

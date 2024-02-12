@@ -1,6 +1,7 @@
 {
     "diagnostics.globals": [
         "builtin",
-        "settings"
+        "settings",
+        "vim"
     ]
 }
