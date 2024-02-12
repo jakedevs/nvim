@@ -1,5 +1,6 @@
 {
     "diagnostics.globals": [
-        "builtin"
+        "builtin",
+        "settings"
     ]
 }
