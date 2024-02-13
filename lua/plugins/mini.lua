@@ -21,5 +21,6 @@ return {
     vim.keymap.set("n", "<leader>ff", MiniPick.builtin.files, { desc = "find files" })
     vim.keymap.set("n", "<leader>fd", MiniExtra.pickers.explorer, { desc = "find everything" })
     vim.keymap.set("n", "<leader>fs", MiniPick.builtin.grep_live, { desc = "search text" })
+    vim.keymap.set("n", "<leader>fm", MiniFiles.open, { desc = "file manager" })
   end,
 }

@@ -30,5 +30,3 @@ vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "co
 -- Cosmetic
 vim.keymap.set({ "n", "v" }, "<leader>le", ":set linebreak<cr>", { desc = "enable line break" })
 vim.keymap.set({ "n", "v" }, "<leader>ld", ":set nolinebreak<cr>", { desc = "disable line break" })
-
-vim.keymap.set("n", "<leader>fm", MiniFiles.open, { desc = "file manager" })
