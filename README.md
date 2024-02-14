@@ -12,6 +12,9 @@ This is strictly a personal configuration.
 ## 305 LOC
 Counted via [Tokei](https://github.com/XAMPPRocky/tokei) (getting kinda big now)
 
+## Fast startup
+50ms-100ms measured with ":Lazy profile"
+
 ## WIP
 - [] Improve buffer management 
 
