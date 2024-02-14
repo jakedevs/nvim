@@ -1,4 +1,3 @@
--- which-key docs
 local wk = require("which-key")
 wk.register({
   b = { name = "buffer operations" },
@@ -7,7 +6,7 @@ wk.register({
   y = { name = "clipboard operations" },
   p = { name = "paste image" },
 }, { prefix = "<leader>" })
--- format function
+
 function Format() require("conform").format({ async = true, lsp_fallback = true }) end
 
 ------------------------------------------------------
@@ -30,3 +29,8 @@ vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "co
 -- Cosmetic
 vim.keymap.set({ "n", "v" }, "<leader>le", ":set linebreak<cr>", { desc = "enable line break" })
 vim.keymap.set({ "n", "v" }, "<leader>ld", ":set nolinebreak<cr>", { desc = "disable line break" })
+
+vim.keymap.set("n", "<leader>ot", ":TypstTogglePreview<cr>", { desc = "typst preview" })
+vim.keymap.set("n", "<leader>oz", ":Lazy<cr>", { desc = "Lazy UI" })
+vim.keymap.set("n", "<leader>om", ":Mason<cr>", { desc = "Mason UI" })
+vim.keymap.set("n", "<leader>og", ":Neogit<cr>", { desc = "open neogit" })
