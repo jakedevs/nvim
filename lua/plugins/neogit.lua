@@ -7,5 +7,4 @@ return {
     "sindrets/diffview.nvim",
   },
   config = true,
-  vim.keymap.set("n", "<leader>g", ":Neogit<cr>", { desc = "open neogit" }),
 }
