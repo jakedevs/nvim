@@ -13,7 +13,14 @@ return {
     require("mini.pick").setup({})
     require("mini.comment").setup({})
     require("mini.surround").setup({})
-    require("mini.files").setup({})
+    require("mini.files").setup({
+      options = {
+        -- Whether to delete permanently or move into module-specific trash
+        -- Whether to use for editing directories
+        use_as_default_explorer = true,
+      },
+    })
+    require("mini.notify").setup()
     require("mini.extra").setup({})
 
     -- Keymap
