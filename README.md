@@ -1,9 +1,10 @@
 # Personal Neovim configuration
 This is strictly a personal configuration.
-
-
 ![](./assets/neovim.png)
 *terminal enlarged for showcase*
+
+# Thurday, February 15, 2024: Taking A Break
+Personal commitment to not change this config anymore unless something breaks or becomes obsolete. I have fallen victim to configuring Neovim.
 
 ## Recent features
 - Random motivational start message because why not
