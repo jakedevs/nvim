@@ -9,7 +9,7 @@ This is strictly a personal configuration.
 - Random motivational start message because why not
 - luasnip-snippets integration(better snippets)
 
-## 305 LOC
+## 352 LOC
 Counted via [Tokei](https://github.com/XAMPPRocky/tokei) (getting kinda big now)
 
 ## Fast startup
