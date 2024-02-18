@@ -17,9 +17,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins", { change_detection = { enabled = false } })
 
--- Currently active colorscheme
--- See plugins/colorschemes for colorscheme list
 vim.cmd("colorscheme kanagawa")
-
 require("mappings")
 require("options")

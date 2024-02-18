@@ -1,12 +1,12 @@
 vim.o.termguicolors = true
 vim.o.guifont = "Hermit:h10"
-vim.opt.termguicolors = true
-vim.opt.showmode = false
-vim.cmd("set tabstop=2")
-vim.cmd("set shiftwidth=2")
-vim.cmd("set expandtab")
-vim.cmd("set smartindent")
-vim.cmd("set autochdir")
-vim.cmd("set conceallevel=2")
-vim.cmd("set cmdheight=2")
-vim.cmd("set cursorline")
+vim.o.termguicolors = true
+vim.o.showmode = false
+vim.o.tabstop = 2
+vim.o.shiftwidth = 2
+vim.o.expandtab = true
+vim.o.smartindent = true
+vim.o.autochdir = true
+vim.o.conceallevel = 2
+vim.o.cmdheight = 2
+vim.o.cursorline = true

@@ -2,7 +2,6 @@ return {
   "epwalsh/obsidian.nvim",
   -- version = "*",  -- recommended, use latest release instead of latest commit
   lazy = true,
-  cmd = "ObsidianLoad",
   ft = "markdown",
   -- Replace the above line with this if you only want to load obsidian.nvim for markdown files in your vault:
   -- event = {
@@ -21,12 +20,18 @@ return {
     workspaces = {
       {
         name = "main",
-        path = "~/Notes",
+        path = "/home/jake/Notes",
       },
     },
 
     picker = {
       name = "mini.pick",
+    },
+
+    templates = {
+      subdir = "Archives/Templates",
+      date_format = "%Y-%m-%d-%a",
+      time_format = "%H:%M",
     },
 
     daily_notes = {
