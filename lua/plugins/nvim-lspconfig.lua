@@ -17,6 +17,7 @@ return {
       lspconfig.tsserver.setup({})
       lspconfig.biome.setup({})
       lspconfig.typst_lsp.setup({})
+      lspconfig.nil_ls.setup({})
       -- lspconfig.ltex.setup({
       --   settings = {
       --     ltex = {

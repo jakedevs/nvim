@@ -11,6 +11,7 @@ return {
       javascript = { "biome" },
       css = { { "prettierd", "prettier" } },
       html = { { "prettierd", "prettier" } },
+      nix = {"nixpkgs_fmt"},
     },
     -- format_on_save = { timeout_ms = 500, lsp_fallback = true },
     -- Customize formatters
